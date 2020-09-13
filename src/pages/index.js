@@ -17,7 +17,7 @@ export default function Home() {
   const { siteName } = metadata;
 
   return (
-    <Layout displayNav={false}>
+    <Layout>
 
       <Helmet>
         <title>{ siteName }</title>
