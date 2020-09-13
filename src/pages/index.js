@@ -9,8 +9,7 @@ import Container from 'components/Container';
 import Button from 'components/Button';
 import FeatureList from 'components/FeatureList';
 
-import imageShirt from 'images/spacejelly-tshirt.jpg';
-import imageSticker from 'images/spacejelly-sticker.jpg';
+import { products } from 'data/products';
 
 export default function Home() {
   const { metadata } = useSite();
@@ -35,24 +34,16 @@ export default function Home() {
       <Section>
         <Container>
           <ul className={styles.productGrid}>
-            <li>
-              <img src={imageShirt} />
-              <h2>Space Jelly Tshirt</h2>
-              <p>
-                Bring Cosmo the space Jellyfish to your wardrobe
-                with this high quality tshirt.
-              </p>
-              <Button>Add to Cart</Button>
-            </li>
-            <li>
-              <img src={imageSticker} />
-              <h2>Space Jelly Stickers</h2>
-              <p>
-                Add some flare to your laptop with a sticker
-                of Cosmo the Space Jellyfish.
-              </p>
-              <Button>Add to Cart</Button>
-            </li>
+            {products.map(product => {
+              return (
+                <li key={product.id}>
+                  <img src={product.image} />
+                  <h2>{ product.name }</h2>
+                  <p>{ product.description }</p>
+                  <Button>Add to Cart</Button>
+                </li>
+              )
+            })}
           </ul>
         </Container>
       </Section>
