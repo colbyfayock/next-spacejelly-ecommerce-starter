@@ -1,18 +1,18 @@
-# Next.js Space Jelly Product Starter
+# Next.js Space Jelly Ecommerce Starter
 
 
 
 ## ⚡️ Quick Start
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/project?template=https://github.com/colbyfayock/next-product-starter)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/project?template=https://github.com/colbyfayock/next-spacejelly-ecommerce-starter)
 
 ## 🚀 Getting Started
 
 Run the following command to create a new project with this Starter:
 
 ```
-yarn create next-app my-app -e https://github.com/colbyfayock/next-product-starter
+yarn create next-app my-app -e https://github.com/colbyfayock/next-spacejelly-ecommerce-starter
 # or
-npx create-next-app my-app -e https://github.com/colbyfayock/next-product-starter
+npx create-next-app my-app -e https://github.com/colbyfayock/next-spacejelly-ecommerce-starter
 ```
 
 Once the project and dependencies are finished installing, you can navigate to that directory and start up the development server with:
